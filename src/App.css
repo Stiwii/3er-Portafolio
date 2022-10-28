@@ -1,0 +1,99 @@
+.app-color{
+  position: relative;    
+  margin: auto;
+  display: block;
+  max-width: 1280px;
+}
+.triangle__container{
+    background-color: red;
+    height:600px;
+    max-width: 1000px;
+    position:fixed;
+    margin:auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+  }
+
+  .triangle{
+    width: 200px;
+    height:200px;
+    position:absolute;
+    transform: rotate(45deg);
+    
+  }
+  .triangle1{
+    width: 150px;
+    height:150px;
+    background: linear-gradient(to left,  rgb(181, 181, 181), rgb(233, 233, 233));
+    left: 150px;
+    top: 150px;
+    animation: t1 8s ease infinite;
+  }
+  .triangle2{
+    width: 150px;
+    height:150px;
+    background: linear-gradient(to left,  #dfdfdf, #b3b3b3);
+    top: 350px;
+    right: 10px ;
+    animation: t2 9s ease infinite;
+    
+  }
+  .triangle3{
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(to left,  #efefef, #b5b5b5ed);
+    top: 50px;
+    right: 0px;
+    animation: t3 7s ease infinite;
+  }
+
+  @keyframes t1 {
+    0%{
+        transform: rotate(45deg) translateY(0px);
+    }
+    50%{
+        transform:rotate(45deg) translateY(20px);
+    }
+    100%{
+        transform:rotate(45deg) translateY(0px);
+    }
+  }
+  @keyframes t2 {
+    0%{
+        transform:rotate(65deg) translateY(0px);
+    }
+    50%{
+        transform:rotate(65deg) translateY(20px);
+    }
+    100%{
+        transform:rotate(65deg) translateY(0px);
+    }
+  }
+
+  @keyframes t3 {
+    0%{
+        transform:rotate(45deg) translateY(0px);
+    }
+    50%{
+        transform:rotate(45deg) translateY(20px);
+    }
+    100%{
+        transform:rotate(45deg) translateY(0px);
+    }
+  }
+
+
+.app{
+  box-sizing: border-box;
+  position: relative;
+  max-width: 1280px;
+  height: 100%;
+  margin: auto;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(5px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: red;
+}
