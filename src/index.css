@@ -1,0 +1,16 @@
+*,
+::after,
+::before{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root{
+  --fondo-color : white;
+  --letter-color : black; 
+}
