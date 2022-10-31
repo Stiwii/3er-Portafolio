@@ -27,11 +27,14 @@ const Navbar = ({setClicked, clicked, setIsLoading}) => {
     <>
       <NavContainer> 
     
-        <div className='nombre' onClick={()=> setIsLoading(true)}>
-        <h1>STEEVEN S.</h1>
-        </div>
         <div className="foto">
-          <img src='./public/identidad/fotoSinFondo.png' alt="" />
+          <a href="https://docs.google.com/document/d/1EbAd7LbJvybZ9qntVOXDdK35T9QJN2zTbvhiDjjAQqY/edit?usp=sharing" target='_blank'>
+          <img src='./identidad/fotoSinFondo.png' alt=""  />
+          </a>
+            
+        </div>
+        <div className='nombre' onClick={()=> setIsLoading(true)}>
+        <h1>SANCHEZ S.</h1>
         </div>
         
         
