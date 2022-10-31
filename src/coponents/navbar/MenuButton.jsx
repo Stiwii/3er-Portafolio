@@ -28,7 +28,7 @@ const Menu = styled.div`
   display: inline-block;
 }
 .nav-icon-5 span{
-  background-color: var(--fondo-color);
+  background-color: var(--color-2);
   position: absolute;
   border-radius: 2px;
   transition: .3s cubic-bezier(.8, .5, .2, 1.4);
@@ -61,16 +61,16 @@ const Menu = styled.div`
 .nav-icon-5.open span:nth-child(1){
   transform: rotate(45deg);
   top: 13px;
-  background-color: var(--letter-color);
+  background-color: var(--color-2);
 }
 .nav-icon-5.open span:nth-child(2){
   opacity:0;
-  background-color: var(--letter-color);
+  background-color: var(--color-2);
 }
 .nav-icon-5.open span:nth-child(3){
   transform: rotate(-45deg);
   top: 13px;
-  background-color: var(--letter-color);
+  background-color: var(--color-2);
 }
 
 `

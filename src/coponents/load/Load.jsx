@@ -23,13 +23,17 @@ const LoadContainer = styled.div`
     align-items: center;
     justify-content:center;
     text-align:center;
-    
+    color: var(--color-2);
+    background-color: var(--color-1);
+
     .letra{
         font-size: 40px;
         font-weight: 800;
         transform: translate(8px, 8px);
         position:absolute;
         margin: auto; 
+     
+        
     } 
 
     .lds-ring {
@@ -46,10 +50,10 @@ const LoadContainer = styled.div`
   width: 100%;
   height: 100%;
   margin: 8px;
-  border: 8px solid #000;
+  border: 8px solid var(--color-2);
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #000 transparent transparent transparent;
+  border-color: var(--color-2) transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;

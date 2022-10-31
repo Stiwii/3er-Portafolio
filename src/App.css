@@ -2,10 +2,12 @@
   position: relative;    
   margin: auto;
   display: block;
-  max-width: 1280px;
+  max-width: 1280px; 
+  background-color: var(--color-1);
+  color: var(--color-2);
 }
 .triangle__container{
-    background-color: red;
+    
     height:600px;
     max-width: 1000px;
     position:fixed;
@@ -13,7 +15,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    
   }
 
   .triangle{
@@ -26,7 +27,7 @@
   .triangle1{
     width: 150px;
     height:150px;
-    background: linear-gradient(to left,  rgb(181, 181, 181), rgb(233, 233, 233));
+    background: linear-gradient(to left, var(--color-3) , var(--color-1t) );
     left: 150px;
     top: 150px;
     animation: t1 8s ease infinite;
@@ -34,7 +35,7 @@
   .triangle2{
     width: 150px;
     height:150px;
-    background: linear-gradient(to left,  #dfdfdf, #b3b3b3);
+    background: linear-gradient(to left, var(--color-3) , var(--color-1t) );
     top: 350px;
     right: 10px ;
     animation: t2 9s ease infinite;
@@ -43,7 +44,7 @@
   .triangle3{
     width: 180px;
     height: 180px;
-    background: linear-gradient(to left,  #efefef, #b5b5b5ed);
+    background: linear-gradient(to left, var(--color-1t) , var(--color-3) );
     top: 50px;
     right: 0px;
     animation: t3 7s ease infinite;
@@ -89,11 +90,54 @@
   box-sizing: border-box;
   position: relative;
   max-width: 1280px;
-  height: 100%;
+  height: 500px;
+  max-height: 100%;
   margin: auto;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(5px);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: red;
+  
+}
+
+.navbar {
+  
+  position:sticky;
+  top: 0%;
+  left: 0%;
+  z-index: 10;
+}
+.footer{
+  /* background-color: red; */
+  position: sticky;
+  bottom: 0;
+  z-index:10;
+
+}
+section{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  margin:auto;
+  position: relative;
+  max-width: 1080px;
+  height:100vh;
+  max-height: 600px;
+  min-height: 100%;
+  
+}
+
+.vista{
+  height: 100%;
+  width: 100%;
+    padding:10px;
+    box-shadow: 20px 0px 50px var(--color-2t);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid var(--color-1t) ;
+    border-top: 1px solid  var(--color-1t);
+    backdrop-filter: blur(3px);  
 }

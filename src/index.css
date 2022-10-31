@@ -14,8 +14,22 @@ a{
   text-decoration: none;
 }
 
-:root{
-  --fondo-color : white;
-  --letter-color : black; 
+body{
+ background-color: var(--color-2);
+}
 
+:root{
+  --color-3 :  rgb(125, 125, 125);
+
+  --color-1 : white;
+  --color-2 : black; 
+  --color-1t: rgba(255, 255, 255, 0.6);
+  --color-2t: rgba(0, 0, 0, 0.6);
+
+}
+.nocturno{
+  --color-1 : black;
+  --color-2 : white; 
+  --color-1t: rgba(0, 0, 0, 0.6);
+  --color-2t: rgba(255, 255, 255, 0.6);
 }
