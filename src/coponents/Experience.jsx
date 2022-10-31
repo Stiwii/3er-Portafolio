@@ -7,9 +7,9 @@ const Experience = () => {
   return (
     <ExperienceSection>
       <div className='experience__container vista'>
-        <h1>Experience</h1>
+        <h2>Experience</h2>
         <div className='Epi'>
-          <h2><span> Epicentro </span></h2>
+          <h3><span> Epicentro </span></h3>
           <p>Computer Science Engineer Intern</p>
           <ul>
             <li>Web page modeling and restructuring using CSS and HTML ;</li>
@@ -17,7 +17,7 @@ const Experience = () => {
           </ul>
         </div>
         <div className='bear'>
-          <h2><span> Viewpoint Andean Bear </span></h2>
+          <h3><span> Viewpoint Andean Bear </span></h3>
           <p>Pimampiro community outreach project</p>
           <ul>
             <li>Update of computer software in schools in the Pimampiro community</li>

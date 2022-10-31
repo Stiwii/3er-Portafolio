@@ -12,14 +12,14 @@ const Home = () => {
          
         <div className="home__container vista">
           <div>
-             <h1 className='greeting'><span className='greeting__span'><span>Welcome</span> , my name is </span> </h1>
+             <h2 className='greeting'><span className='greeting__span'><span>Welcome</span> , my name is </span> </h2>
         </div>
          
           <div>
-          <h2 className='name'><span className='name_span'>Steeven Sanchez.</span> </h2>
+          <h3 className='name'><span className='name_span'>STEEVEN SANCHEZ.</span> </h3>
         </div>
         <div>
-          <h3 className='employment'><span className='employment__span'>Full Stack Web Developer.</span></h3>
+          <h4 className='employment'><span className='employment__span'>Full Stack Web Developer.</span></h4>
         </div>
        
         <div>

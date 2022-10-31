@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
-    }, 1000) //tiempo de carga del loading
+    }, 500) //tiempo de carga del loading
   }, [isLoading])
   // constante abrir el navbar
   const [clicked, setClicked] = useState(false)

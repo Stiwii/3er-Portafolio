@@ -10,7 +10,7 @@ const About = () => {
       <div className="about__container vista">
 
       <div className='title'>
-        <h1><span>About me</span></h1>
+        <h2><span>About me</span></h2>
       </div>
       <div className='info'>
         <p>
