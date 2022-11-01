@@ -8,9 +8,9 @@ const Skills = () => {
     <SkillSection>
 
       <div className='skills__container vista'>
-        <h2><span>Skills</span> </h2>
+        <h2><span>SKILLS</span> </h2>
         <div className='languages'>
-          <h3><span>PROGRAMMING LANGUAGES</span></h3>
+          <h3><span>Programming Languages</span></h3>
           <ul>
             <li><span>▶ </span> Python</li>
             <li><span>▶ </span> C/C++ C#</li>
@@ -18,7 +18,7 @@ const Skills = () => {
           </ul>
         </div>
         <div className="technologies">
-          <h3>TECHNOLOGIES</h3>
+          <h3>Technologies</h3>
           <ul>
             <li><span>▶ </span> HTML5</li>
             <li><span>▶ </span> Css</li>

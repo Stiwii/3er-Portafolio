@@ -31,9 +31,7 @@ const About = () => {
 
       </div>
       </div>
-      
 
-     
     </AboutSection>
     </>
   )

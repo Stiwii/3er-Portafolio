@@ -8,8 +8,10 @@ const Home = () => {
   return (
     <>
       <HomeSection id='home'>
-        
-         
+      <div className='background'>
+            
+            </div>
+
         <div className="home__container vista">
           <div>
              <h2 className='greeting'><span className='greeting__span'><span>Welcome</span> , my name is </span> </h2>
@@ -26,13 +28,6 @@ const Home = () => {
           <p><span className='uppercase'>I</span> am a student in the last semester of Computer Science and Full Stack Web Developer, especially in Front End. Currently, I work on creating projects where I focus my knowledge on <span className='react'><a href="https://reactjs.org" target='_blank'>Reactjs</a>. </span> </p>
         </div>
         </div>
-
-
-
-
-     
-      
-
       </HomeSection>
      
     </>
@@ -42,5 +37,29 @@ const Home = () => {
 export default Home
 
 const HomeSection = styled.section`
+  position:relative;
+  @keyframes rotate1 {
+    0%{
+        transform: rotate(0deg) translateX(300px);
+    }
+    50%{
+        transform:rotate(180deg) translateY(200px);
+    }
+    100%{
+        transform:rotate(360deg) translate(0px);
+    }
+  }
+  .background{
+    background-image:url('https://i.pinimg.com/564x/c3/54/d3/c354d3692b146508b4cd0447817d3f7d.jpg'); 
+    position: fixed ;
+    height:500px;
+    width:500px;
+    border-radius: 55%;
+    background-size: cover;
+    opacity:.1;
+    top:100px;
+    left:500px;
+    animation: rotate1 40s ease infinite;
+  }
     
 `

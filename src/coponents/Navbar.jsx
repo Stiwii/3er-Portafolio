@@ -64,7 +64,7 @@ const NavContainer = styled.nav`
   width:100%;
   max-width: 1040px;
   height:100%;
-  max-height: 100px;
+  max-height: 120px;
   
   margin:auto;
   padding:10px;
@@ -111,8 +111,8 @@ const NavContainer = styled.nav`
     position:relative;
     width: 100%;
     height: 100%;
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 100px;
+    max-height: 100px;
     border: solid 0px var(--color-2);
     outline: 1px solid var(--color-2);
     cursor: pointer;

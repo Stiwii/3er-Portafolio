@@ -29,20 +29,21 @@ function App() {
           <Load /> :
 
           <div className='app-color'>
+          
             <div className="triangle__container">
               <div className=" triangle triangle1"></div>
               <div className=" triangle triangle2"></div>
               <div className=" triangle triangle3"></div>
             </div>
 
-              <div className='navbar'>
-                <Navbar
-                  setClicked={setClicked}
-                  clicked={clicked}
-                  setIsLoading={setIsLoading}
-                 
-                />
-              </div>
+            <div className='navbar'>
+              <Navbar
+                setClicked={setClicked}
+                clicked={clicked}
+                setIsLoading={setIsLoading}
+
+              />
+            </div>
             <div className="App" >
               <Home />
               <About />
@@ -50,7 +51,7 @@ function App() {
               <Experience />
             </div>
             <div className='footer'>
-                <Footer  
+              <Footer
                 setChangeNocturn={setChangeNocturn}
                 changeNocturn={changeNocturn} />
             </div>
