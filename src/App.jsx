@@ -45,10 +45,22 @@ function App() {
               />
             </div>
             <div className="App" >
+              <section id='home'>
               <Home />
+              </section>
+              <section id='about'>
               <About />
+              </section>
+              <section id='skills'>
               <Skills />
+              </section>
+              <section id='experience'>
               <Experience />
+              </section>
+              
+              
+             
+              
             </div>
             <div className='footer'>
               <Footer

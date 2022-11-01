@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 import styled from 'styled-components'
 import MenuButton from './navbar/MenuButton'
@@ -27,23 +27,23 @@ const Navbar = ({setClicked, clicked, setIsLoading}) => {
     <>
       <NavContainer> 
     
-        <div className="foto">
+        <header className="foto">
           <a href="https://docs.google.com/document/d/1EbAd7LbJvybZ9qntVOXDdK35T9QJN2zTbvhiDjjAQqY/edit?usp=sharing" target='_blank'>
           <img src='./identidad/fotoSinFondo.png' alt=""  />
           </a>
             
-        </div>
+        </header>
         <div className='nombre' onClick={()=> setIsLoading(true)}>
         <h1>SANCHEZ S.</h1>
         </div>
         
         
         <div className={`nav__links ${clicked ? 'active' : ''}`} >
-        <NavLink onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} to='/' end><AiFillHome /></NavLink>
-          <NavLink onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} to='/about' >About <HiInformationCircle/></NavLink>
-          <NavLink onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} to='/skills' ><GiSkills /> Skills</NavLink>
-          <NavLink onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} to='/experience' >Experience <FaBookReader/></NavLink>
-          <NavLink onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} to='/projects' ><AiFillProject/> Projects</NavLink>
+        <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#' end><AiFillHome /></a>
+          <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#about' >About <HiInformationCircle/></a>
+          <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#skills' ><GiSkills /> Skills</a>
+          <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='/experience' >Experience <FaBookReader/></a>
+          <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='/projects' ><AiFillProject/> Projects</a>
 
         </div>
        
