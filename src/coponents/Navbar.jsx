@@ -181,7 +181,7 @@ const NavContainer = styled.nav`
     align-items: center;  
     justify-content: center;
     gap: 25px;
-    
+    color: var(--color-1);
   }
 
   .nav__links.active{
@@ -195,6 +195,7 @@ const NavContainer = styled.nav`
     padding-top: 0;
     z-index:50;
     backdrop-filter: blur(3px); 
+    
 
   }
 
@@ -204,11 +205,13 @@ const NavContainer = styled.nav`
     border-left: 1px solid var(--color-1t);
     border-top: 1px solid var(--color-1t);
     width: 100%;
-    background: rgba(255, 255, 255, 0.25);
+    background: var(--color-2t);
     max-width: 200px;
     text-align:center;
     text-transform: capitalize;
     font-size: 30px;
+    -webkit-text-stroke: 2px var(--color-2) ;
+  /* color: var(--color-2); */
   }
   .nav__word:hover{
     transform:translateY(-5px) scale(1.01);

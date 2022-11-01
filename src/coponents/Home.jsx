@@ -46,7 +46,7 @@ const HomeSection = styled.section`
         transform:rotate(180deg) translateY(200px);
     }
     100%{
-        transform:rotate(360deg) translate(0px);
+        transform:rotate(0deg) translate(300px);
     }
   }
   .background{
@@ -58,7 +58,7 @@ const HomeSection = styled.section`
     background-size: cover;
     opacity:.1;
     top:100px;
-    left:500px;
+    left:200px;
     animation: rotate1 40s ease infinite;
   }
     

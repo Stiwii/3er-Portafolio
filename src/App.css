@@ -143,6 +143,12 @@ section{
     backdrop-filter: blur(3px);  
     
 }
+h1{
+  -webkit-text-stroke: .5px var(--color-2) ;
+  color: var(--color-1);
+}
+
+
 
 h2{
   
@@ -171,6 +177,11 @@ p{
   color: var(--color-1);
   font-size: clamp(0.5rem, 5vw, 1.5rem);
   margin: 20px;
+}
+p span{
+  color: var(--color-2);
+  font-weight: -100;
+  
 }
 ul{
   -webkit-text-stroke: 1px var(--color-2) ;
