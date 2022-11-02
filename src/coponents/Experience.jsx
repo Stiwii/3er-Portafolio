@@ -32,7 +32,7 @@ const Experience = () => {
 
 export default Experience
 
-const ExperienceSection = styled.section`
- 
+const ExperienceSection = styled.div`
+ margin-top: 120px;
 
 `

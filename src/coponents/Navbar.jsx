@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import MenuButton from './navbar/MenuButton'
 
-import { AiFillHome, AiFillProject, AiOutlineContacts } from 'react-icons/ai';
+import { AiFillContacts, AiFillHome, AiFillProject, AiOutlineContacts } from 'react-icons/ai';
 import { HiInformationCircle } from 'react-icons/hi';
 import { GiSkills } from 'react-icons/gi';
 import { FaBookReader } from 'react-icons/fa';
@@ -42,9 +42,9 @@ const Navbar = ({setClicked, clicked, setIsLoading}) => {
         <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#' end><AiFillHome /></a>
           <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#about' >About <HiInformationCircle/></a>
           <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#skills' ><GiSkills /> Skills</a>
-          <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='/experience' >Experience <FaBookReader/></a>
-          <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='/projects' ><AiFillProject/> Projects</a>
-
+          <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#experience' >Experience <FaBookReader/></a>
+          <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#projects' ><AiFillProject/> Projects</a>
+          <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#contact' > Contact <AiFillContacts/></a>
         </div>
        
         <div className='btn__menu'>
@@ -62,7 +62,7 @@ const NavContainer = styled.nav`
   position: relative;
 
   width:100%;
-  max-width: 1040px;
+  max-width: 1080px;
   height:100%;
   max-height: 120px;
   

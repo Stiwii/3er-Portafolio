@@ -39,6 +39,7 @@ const About = () => {
 
 export default About
 
-const AboutSection = styled.section`
+const AboutSection = styled.div`
+ margin-top: 120px;
  
 `

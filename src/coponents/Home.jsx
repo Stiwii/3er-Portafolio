@@ -36,7 +36,7 @@ const Home = () => {
 
 export default Home
 
-const HomeSection = styled.section`
+const HomeSection = styled.div`
   position:relative;
   @keyframes rotate1 {
     0%{

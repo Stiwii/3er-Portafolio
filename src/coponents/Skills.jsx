@@ -55,6 +55,6 @@ const Skills = () => {
 
 export default Skills
 
-const SkillSection = styled.section`
-
+const SkillSection = styled.div`
+margin-top: 120px;
   `
