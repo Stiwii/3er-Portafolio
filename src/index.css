@@ -3,6 +3,10 @@
   src: local('Saiyan-Sans'),
   url('./fonts/Saiyan-Sans.ttf') format('truetype');
 }
+html {
+  /* box-sizing: border-box; */
+  scroll-behavior: smooth;
+}
 
 *,
 ::after,
@@ -26,11 +30,17 @@ body{
 
 :root{
   --color-3 :  rgb(125, 125, 125);
+  --color-5 : rgba(255, 0, 0, .1);
+  --color-4 : rgba(255, 255, 0, .1);
 
   --color-1 : white;
   --color-2 : black; 
   --color-1t: rgba(255, 255, 255, 0.6);
   --color-2t: rgba(0, 0, 0, 0.6);
+  --color-1tt: rgba(255, 255, 255, 0.3);
+  --color-2tt: rgba(0, 0, 0, 0.3);
+  --color-1ttt: rgba(255, 255, 255, 0.9);
+  --color-2ttt: rgba(0, 0, 0, 0.9);
 
 }
 .nocturno{
@@ -38,6 +48,10 @@ body{
   --color-2 : white; 
   --color-1t: rgba(0, 0, 0, 0.6);
   --color-2t: rgba(255, 255, 255, 0.6);
+  --color-2tt: rgba(255, 255, 255, 0.3);
+  --color-1tt: rgba(0, 0, 0, 0.3);
+  --color-2ttt: rgba(255, 255, 255, 0.9);
+  --color-1ttt: rgba(0, 0, 0, 0.9);
 }
 
 body{

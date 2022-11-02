@@ -35,13 +35,14 @@ function App() {
               <div className=" triangle triangle2"></div>
               <div className=" triangle triangle3"></div>
             </div>
-
+            <div className='back_nav'></div>
             <div className='navbar'>
               <Navbar
                 setClicked={setClicked}
                 clicked={clicked}
                 setIsLoading={setIsLoading}
-
+                setChangeNocturn={setChangeNocturn}
+                changeNocturn={changeNocturn} 
               />
             </div>
             <div className="App" >

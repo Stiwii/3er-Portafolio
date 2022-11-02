@@ -5,6 +5,7 @@ import styled from 'styled-components'
 const Load = () => {
   return (
     <LoadContainer>
+      <div className='back_nav'></div>
        <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
        <div className='letra'>
          <h1>S</h1>
@@ -26,14 +27,18 @@ const LoadContainer = styled.div`
     color: var(--color-2);
     background-color: var(--color-1);
 
+
     .letra{
         font-size: 40px;
         font-weight: 800;
         transform: translate(8px, 8px);
         position:absolute;
         margin: auto; 
-     
-        
+       font-family: 'Times New Roman', Times, serif;
+       background-image: linear-gradient(0deg, rgba(255, 0, 0, 6) 30%, rgba(255, 255, 0, 6) 70%);
+       display: inline-block;
+     -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     } 
 
     .lds-ring {

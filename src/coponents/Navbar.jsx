@@ -11,46 +11,51 @@ import { FaBookReader } from 'react-icons/fa';
 import { GrProjects } from 'react-icons/gr';
 
 
-const Navbar = ({setClicked, clicked, setIsLoading}) => {
+const Navbar = ({ setClicked, clicked, setIsLoading, setChangeNocturn, changeNocturn }) => {
 
   const [clicke, setClicke] = useState(false)
+  
 
-  const handleClick = () => { 
+  const handleClick = () => {
     //pasar de false a true y viceversa
     setClicked(!clicked)
     // setClicke(!clicke)
   }
 
+  const handleNoc = () => {
+    setChangeNocturn(!changeNocturn)
+  }
 
 
   return (
     <>
-      <NavContainer> 
-    
-        <header className="foto">
+      <NavContainer>
+        <div className='back_nv'></div>
+        <div className='nombre' onClick={() => setIsLoading(true)}>
+          <h1>SANCHEZ STEEVEN</h1>
+        </div>
+        <div className="foto">
           <a href="https://docs.google.com/document/d/1EbAd7LbJvybZ9qntVOXDdK35T9QJN2zTbvhiDjjAQqY/edit?usp=sharing" target='_blank'>
-          <img src='./identidad/fotoSinFondo.png' alt=""  />
+            <img src='./identidad/fotoSinFondo.png' alt="" />
           </a>
-            
-        </header>
-        <div className='nombre' onClick={()=> setIsLoading(true)}>
-        <h1>SANCHEZ S.</h1>
         </div>
-        
-        
+        <button className={`switch ${changeNocturn ? 'active' : ''}`} onClick={handleNoc}></button>
+
         <div className={`nav__links ${clicked ? 'active' : ''}`} >
-        <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#' end><AiFillHome /></a>
-          <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#about' >About <HiInformationCircle/></a>
-          <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#skills' ><GiSkills /> Skills</a>
-          <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#experience' >Experience <FaBookReader/></a>
-          <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#projects' ><AiFillProject/> Projects</a>
-          <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#contact' > Contact <AiFillContacts/></a>
+          <div className='nav_flex'>
+            <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#' end><AiFillHome /> Home</a>
+            <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#about' >About <HiInformationCircle /></a>
+            <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#skills' ><GiSkills /> Skills</a>
+            <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#experience' >Experience <FaBookReader /></a>
+            <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#projects' ><AiFillProject /> Projects</a>
+            <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#contact' > Contact <AiFillContacts /></a>
+          </div>
         </div>
-       
+
         <div className='btn__menu'>
-    <MenuButton clicked={clicked} handleClick={handleClick} />
-       </div>
-       
+          <MenuButton clicked={clicked} handleClick={handleClick} />
+        </div>
+
       </NavContainer>
     </>
   )
@@ -75,6 +80,7 @@ const NavContainer = styled.nav`
 
   box-shadow: 20px 0px 50px var(--color-2t);
     background: rgba(255, 255, 255, 0.1);
+    
     border-left: 1px solid var(--color-1t) ;
     border-top: 1px solid  var(--color-1t);
     backdrop-filter: blur(3px);  
@@ -86,7 +92,18 @@ const NavContainer = styled.nav`
     100%{background-position: 0 50%;}
   }
 
-
+  .back_nav{
+    position: absolute;
+    width:100%;
+ 
+  height:100vh;
+  background-image: url('https://38.media.tumblr.com/fe2be7992406f6a08369cce31b3154fc/tumblr_n9af8lWC711r72ht7o1_r1_500.gif');
+  background-size: cover;
+  opacity: 0.2;
+  top: 0; 
+  right: 0;
+  z-index: -1;
+  }
   .nombre{
     border: solid 1px var(--color-2);
     padding: 0px 20px;
@@ -98,13 +115,19 @@ const NavContainer = styled.nav`
       width: 100%;
       font-size: 20px;
     }
+    transition: all 1000ms ease;
   }
   .nombre:hover{
     outline: solid 6px var(--color-2);
     outline-offset: -6px;
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 6) 30%, rgba(255, 255, 0, 6) 70%);
+     display: inline-block;
+     -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     h1{
-      text-shadow:  0 0 8px var(--color-2);
+      /* text-shadow:  0 0 2px var(--color-2t); */
     }
+    transition: all 1000ms ease;
   }
   
   .foto{
@@ -125,16 +148,20 @@ const NavContainer = styled.nav`
     position:absolute;
     content: '';
     background-color: var(--color-1t);
+    background-image: url('https://www.gifcen.com/wp-content/uploads/2022/05/dragon-ball-z-gif-11.gif');
+    background-size: cover;
+    opacity: 0.2;
     width: 100%;
     height: 100%;
     transform: translateX(-100%);
     border:solid 1px var(--color-2);
-    transition: display 1000ms ease;
+    transition: all 1000ms ease;
+    z-index:-1;
   }
 
   .foto:hover::after{
-    display:none;
-    transition: display 1000ms ease;
+    opacity: 1 ;
+    transition: all 1000ms ease;
   }
   .foto::before{
     position:absolute;
@@ -148,13 +175,55 @@ const NavContainer = styled.nav`
     display: flex;
     justify-content: center;
     align-items:center;
+    top: 28px;
+    left: 28px;
+    -webkit-text-stroke: .5px var(--color-1) ;
+    transition: all 800ms ease;
+ 
   }
   .foto:hover::before{
     color: var(--color-2t);
     z-index: -1;
-    transition: display 1000ms ease;
+    transition: all 800ms ease;
+    -webkit-text-stroke: .5px var(--color-4) ;
   }
 
+  .switch {
+  background: var(--color-2ttt);
+  width: 60px;
+  height: 32px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute; 
+  display: none;
+  right:60px;
+  
+}
+.switch::after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  background: var(--color-1t);
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+  display: block;
+  margin: 2px; 
+  right: unset;
+  background-image: url('https://i.pinimg.com/originals/9b/d6/2e/9bd62eb341dcd095bf01657f50d37257.jpg');
+  background-size: cover;
+ 
+}
+
+
+.active::after {
+  right: 0;
+  left: unset;
+  
+}
  
 
   .btn__menu{
@@ -172,10 +241,11 @@ const NavContainer = styled.nav`
     font-size:1.5rem;
     position: absolute;
     top: -2000px;
-    left: -2000px;
-    transition: .1s; 
+    bottom:0;
     width: 100vw;
     height: 100vh;
+    max-height: 100vh;
+    max-width:100vw;
     display:flex;
     flex-direction:column;
     align-items: center;  
@@ -183,43 +253,92 @@ const NavContainer = styled.nav`
     gap: 25px;
     color: var(--color-1);
   }
-
+  
   .nav__links.active{
-    max-height: 100vh;
-    max-width:100vw;
     background-color: var(--color-1t);
     top:0px; 
     right: 0px; 
-    bottom:0; 
-    left:0;
     padding-top: 0;
     z-index:50;
     backdrop-filter: blur(3px); 
-    
-
+    transition:all .5s ease; 
   }
-
+  
+  .nav_flex{
+    display:flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    gap: 25px;
+  }
   .nav__word{
     padding:10px;
     box-shadow: 20px 20px 50px var(--color-2t);
     border-left: 1px solid var(--color-1t);
     border-top: 1px solid var(--color-1t);
     width: 100%;
-    background: var(--color-2t);
-    max-width: 200px;
+    background: var(--color-2tt);
+    max-width: clamp(180px , 25vw, 200px);
     text-align:center;
     text-transform: capitalize;
     font-size: 30px;
     -webkit-text-stroke: 2px var(--color-2) ;
-  /* color: var(--color-2); */
+    
+
   }
   .nav__word:hover{
     transform:translateY(-5px) scale(1.01);
-    transition: all 500ms;
+    transition: all 500ms ease;
+    
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 6) 30%, rgba(255, 255, 0, 6) 70%);
+     display: inline-block;
+     -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
   .nav__word.active{
-    text-shadow:  0 0 8px white;
+    
   }
   
- 
+ @media (min-width: 768px) {
+    
+    .btn__menu{
+    display: none;
+  }
+     .switch{
+    display: flex;
+    right:80px;
+    z-index: 10;
+  }
+     .nav__links{
+    display: flex;
+    
+    height: 600px;
+    margin:auto;
+    top:350px;
+    right:0;
+    /* background-color: red; */
+    max-width: clamp(170px , 50vw, 200px);
+  }
+     .nav__links.active{
+    display: fixed;
+  
+    height: 600px;
+    margin:none;
+    top:350px;
+    right: 0; 
+    z-index:1;
+    backdrop-filter: none; 
+    transition:all 1s ease; 
+    background-color: transparent;
+  }
+     .nav_flex{
+    display:flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    gap: 1rem;
+  }
+
+
+ }
 `
