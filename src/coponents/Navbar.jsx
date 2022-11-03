@@ -47,8 +47,8 @@ const Navbar = ({ setClicked, clicked, setIsLoading, setChangeNocturn, changeNoc
             <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#about' >About <HiInformationCircle /></a>
             <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#skills' ><GiSkills /> Skills</a>
             <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#experience' >Experience <FaBookReader /></a>
-            <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#projects' ><AiFillProject /> Projects</a>
-            <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#contact' > Contact <AiFillContacts /></a>
+            {/* <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#projects' ><AiFillProject /> Projects</a> */}
+            {/* <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#contact' > Contact <AiFillContacts /></a> */}
           </div>
         </div>
 
