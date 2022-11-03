@@ -3,6 +3,12 @@
   src: local('Saiyan-Sans'),
   url('./fonts/Saiyan-Sans.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'one-piece';
+  src: local('One-piece'),
+  url('./fonts/one-piece-font.ttf') format('truetype');
+}
+
 html {
   /* box-sizing: border-box; */
   scroll-behavior: smooth;

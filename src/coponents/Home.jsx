@@ -43,24 +43,30 @@ const HomeSection = styled.div`
     0%{
         transform: rotate(0deg) translateX(300px);
     }
+    25%{
+        transform:rotate(-180deg) translateY(-300px);
+    }
     50%{
         transform:rotate(180deg) translateY(200px);
     }
+    75%{
+        transform:rotate(180deg) translateY(200px);
+    }
     100%{
-        transform:rotate(0deg) translate(300px);
+        transform:rotate(0deg) translateX(300px);
     }
   }
   .background{
     background-image:url('https://i.pinimg.com/564x/c3/54/d3/c354d3692b146508b4cd0447817d3f7d.jpg'); 
     position: fixed ;
-    height:500px;
-    width:500px;
+    height:400px;
+    width:400px;
     border-radius: 55%;
     background-size: cover;
-    opacity:.1;
+    opacity:.5;
     top:100px;
     left:200px;
-    animation: rotate1 40s ease infinite;
+    animation: rotate1 20s ease infinite;
   }
   .react{
     transition: all 1s ease;

@@ -252,15 +252,18 @@ const NavContainer = styled.nav`
     justify-content: center;
     gap: 25px;
     color: var(--color-1);
+
   }
   
   .nav__links.active{
-    background-color: var(--color-1t);
+    background-color: var(--color-1);
     top:0px; 
     right: 0px; 
     padding-top: 0;
     z-index:50;
     backdrop-filter: blur(3px); 
+    
+/* opacity:.5; */
     transition:all .5s ease; 
   }
   
@@ -289,7 +292,7 @@ const NavContainer = styled.nav`
   .nav__word:hover{
     transform:translateY(-5px) scale(1.01);
     transition: all 500ms ease;
-    
+    color: var(--color-2);
     background-image: linear-gradient(0deg, rgba(255, 0, 0, 6) 30%, rgba(255, 255, 0, 6) 70%);
      display: inline-block;
      -webkit-background-clip: text;
@@ -310,18 +313,16 @@ const NavContainer = styled.nav`
     z-index: 10;
   }
      .nav__links{
-    display: flex;
-    
+    display: flex; 
     height: 600px;
     margin:auto;
     top:350px;
     right:0;
-    /* background-color: red; */
     max-width: clamp(170px , 50vw, 200px);
+    background: none;
   }
      .nav__links.active{
     display: fixed;
-  
     height: 600px;
     margin:none;
     top:350px;

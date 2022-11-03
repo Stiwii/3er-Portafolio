@@ -2,19 +2,17 @@
   position: relative;    
   margin: auto;
   display: block;
-  max-width: 1280px; 
+  max-width: 100%; 
   background-color: var(--color-1);
   color: var(--color-2);
-  
 }
 .back_nav{
   position: fixed;
   width:100vw;
-
 height:100vh;
 background-image: url('https://38.media.tumblr.com/fe2be7992406f6a08369cce31b3154fc/tumblr_n9af8lWC711r72ht7o1_r1_500.gif');
 background-size: cover;
-opacity: 0.1;
+opacity: 0.2;
 top: 0; 
 right: 0;
 z-index: 1;
@@ -31,14 +29,14 @@ z-index: 1;
     transform: translate(-50%,-50%);
   }
 
-  .triangle{
+  .triangles{
     width: 200px;
     height:200px;
     position:absolute;
     transform: rotate(45deg);
     
   }
-  .triangle1{
+  .triangles1{
     width: 150px;
     height:150px;
     background: linear-gradient(to left, var(--color-3) , var(--color-1t) );
@@ -46,7 +44,7 @@ z-index: 1;
     top: 150px;
     animation: t1 7s ease infinite;
   }
-  .triangle2{
+  .triangles2{
     width: 150px;
     height:150px;
     background: linear-gradient(to left, var(--color-3) , var(--color-1t) );
@@ -55,7 +53,7 @@ z-index: 1;
     animation: t2 9s ease infinite;
     
   }
-  .triangle3{
+  .triangles3{
     width: 180px;
     height: 180px;
     background: linear-gradient(to left, var(--color-1t) , var(--color-3) );
@@ -130,29 +128,22 @@ z-index: 1;
 }
 section{
   display: flex;
-  /* -webkit-box-pack: center; */
-  /* justify-content: center; */
-  /* -webkit-box-align: center; */
   flex-direction: column;
-  /* align-items: center; */
-  /* padding: 20px; */
   margin:auto;
   position: relative;
   width: 100%;
   max-width: 1080px;
   height:100%;
-
-  ;
 }
 
 .vista{
   height: 100%;
   width: 100%;
     padding:30px 20px;
-    box-shadow: 20px 0px 50px var(--color-2t);
+    /* box-shadow: 20px 0px 50px var(--color-2ttt);
     background: rgba(255, 255, 255, 0.1);
-    border-left: 1px solid var(--color-1t) ;
-    border-top: 1px solid  var(--color-1t);
+    border-left: 1px solid var(--color-1ttt) ;
+    border-top: 1px solid  var(--color-1ttt); */
     backdrop-filter: blur(3px);  
     margin: auto;
     
@@ -187,14 +178,16 @@ h4{
 }
 
 p{
-  -webkit-text-stroke: 1px var(--color-2) ;
-  color: var(--color-1);
+
+  color: var(--color-2);
   font-size: clamp(0.5rem, 5vw, 1.5rem);
   margin: 20px;
+  font-family: one-piece;
 }
 p span{
   color: var(--color-2);
   font-weight: -100; 
+  text-decoration: underline;
 }
 p span:hover{
   background-image: linear-gradient(0deg, rgba(255, 0, 0, 1) 30%, rgba(255, 255, 0, 1) 70%);
@@ -204,10 +197,11 @@ p span:hover{
   transition: all 1s easy;
 }
 ul{
-  -webkit-text-stroke: 1px var(--color-2) ;
-  color: var(--color-1);
+  /* -webkit-text-stroke: 1px var(--color-2) ; */
+  color: var(--color-2);
   font-size: clamp(0.3rem, 8vw, 1.5rem);
   margin: 20px;
+  font-family: one-piece;
 }
 
 @media (min-width: 768px) {
@@ -222,12 +216,12 @@ ul{
 
 #home, #skills, #projects{
   display: flex;
-  background: linear-gradient(10deg,var(--color-2t) 0% ,var(--color-4)50%, var(--color-5) 50% , var(--color-1t) 100% );
+  /* background: linear-gradient(10deg,var(--color-2t) 0% ,var(--color-4)50%, var(--color-5) 50% , var(--color-1t) 100% ); */
   z-index: 2;
 }
 #about,#experience, #contact{
   display: flex;
-  background: linear-gradient(170deg,var(--color-2t) 0% ,var(--color-4)50%, var(--color-5) 50% , var(--color-1t) 100% );
+  /* background: linear-gradient(170deg,var(--color-2t) 0% ,var(--color-4)50%, var(--color-5) 50% , var(--color-1t) 100% ); */
   z-index: 2;
 }
 
