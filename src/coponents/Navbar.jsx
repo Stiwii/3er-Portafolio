@@ -28,27 +28,32 @@ const Navbar = ({ setClicked, clicked, setIsLoading, setChangeNocturn, changeNoc
 
 
   return (
-    <>
       <NavContainer>
-        <div className='back_nv'></div>
-        <div className='nombre' onClick={() => setIsLoading(true)}>
-          <h1>SANCHEZ STEEVEN</h1>
+       
+        <div  >
+          <h1 onClick={() => setIsLoading(true)} className='nombre'>SANCHEZ S.</h1>
+          <a href="mailto:stiwers1997@gmail.com"><p className='mail'>stiwers1997@gmail.com</p> </a>
+          
         </div>
         <div className="foto">
           <a href="https://docs.google.com/document/d/1EbAd7LbJvybZ9qntVOXDdK35T9QJN2zTbvhiDjjAQqY/edit?usp=sharing" target='_blank'>
             <img src='./identidad/fotoSinFondo.png' alt="" />
           </a>
         </div>
+        <div >
+        <a className={`nav__word contact`} href='#contact' > Contact me <AiFillContacts /></a>
+        </div>
         <button className={`switch ${changeNocturn ? 'active' : ''}`} onClick={handleNoc}></button>
 
         <div className={`nav__links ${clicked ? 'active' : ''}`} >
+        <a href="mailto:stiwers1997@gmail.com"><p className='mail nav_mail'>stiwers1997@gmail.com</p> </a>
           <div className='nav_flex'>
             <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#' end><AiFillHome /> Home</a>
             <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#about' >About <HiInformationCircle /></a>
             <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#skills' ><GiSkills /> Skills</a>
             <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#experience' >Experience <FaBookReader /></a>
-            {/* <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#projects' ><AiFillProject /> Projects</a> */}
-            {/* <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#contact' > Contact <AiFillContacts /></a> */}
+            <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#projects' ><AiFillProject /> Projects</a>
+            <a onClick={handleClick} className={`nav__word ${clicke ? 'active' : ''}`} href='#contact' > Contact <AiFillContacts /></a>
           </div>
         </div>
 
@@ -57,19 +62,18 @@ const Navbar = ({ setClicked, clicked, setIsLoading, setChangeNocturn, changeNoc
         </div>
 
       </NavContainer>
-    </>
   )
 }
 
 export default Navbar
 
-const NavContainer = styled.nav`
+const NavContainer = styled.div`
   position: relative;
 
   width:100%;
   max-width: 1080px;
   height:100%;
-  max-height: 120px;
+  max-height: max-content;
   
   margin:auto;
   padding:10px;
@@ -78,13 +82,13 @@ const NavContainer = styled.nav`
   display: flex;
   align-items: center;
 
-  box-shadow: 20px 0px 50px var(--color-2t);
-    background: rgba(255, 255, 255, 0.1);
+  box-shadow: 20px 0px 50px red;
+    
     
     border-left: 1px solid var(--color-1t) ;
     border-top: 1px solid  var(--color-1t);
     backdrop-filter: blur(3px);  
-
+  
   
   @keyframes moverDiagonal{
     0%{background-position: 0 50%;}
@@ -92,44 +96,55 @@ const NavContainer = styled.nav`
     100%{background-position: 0 50%;}
   }
 
-  .back_nav{
-    position: absolute;
-    width:100%;
- 
-  height:100vh;
-  background-image: url('https://38.media.tumblr.com/fe2be7992406f6a08369cce31b3154fc/tumblr_n9af8lWC711r72ht7o1_r1_500.gif');
-  background-size: cover;
-  opacity: 0.2;
-  top: 0; 
-  right: 0;
-  z-index: -1;
-  }
+
   .nombre{
+    width:max-content;
     border: solid 1px var(--color-2);
-    padding: 0px 20px;
+    padding: 10px 20px;
     outline: solid 1px var(--color-2);
     outline-offset: -6px;
-    cursor: pointer;
+    cursor: url('./icon/pointer.png'), auto;
     h1{
-      
       width: 100%;
       font-size: 20px;
     }
     transition: all 1000ms ease;
+    margin:0;
   }
   .nombre:hover{
     outline: solid 6px var(--color-2);
     outline-offset: -6px;
     background-image: linear-gradient(0deg, rgba(255, 0, 0, 6) 30%, rgba(255, 255, 0, 6) 70%);
-     display: inline-block;
      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-    h1{
-      /* text-shadow:  0 0 2px var(--color-2t); */
-    }
     transition: all 1000ms ease;
   }
+
+  .mail{
+  cursor: url('./icon/pointer.png'), auto;
+  right:25px;
+  top:20px;
+  z-index:10;
+  margin:0;
+  margin-top:5px;
+  max-width: max-content;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mail:hover{
+  cursor: url('./icon/pointer.png'), auto;
+  background-image: linear-gradient(0deg, 
+    rgba(255, 0, 0, 6) 30%,
+     rgba(255, 255, 0, 6) 70%);
+     -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      /* -webkit-text-stroke: .01px var(--color-2) ; */
+  color: var(--color-1);
+  font-weight: 1000;
+  border-bottom: 3px solid var(--color-2);
+  transition: all 1s ease;
   
+}
   .foto{
     position:relative;
     width: 100%;
@@ -138,12 +153,19 @@ const NavContainer = styled.nav`
     max-height: 100px;
     border: solid 0px var(--color-2);
     outline: 1px solid var(--color-2);
-    cursor: pointer;
+    cursor: url('./icon/pointer.png'), auto;
+    margin-right: 70px;
     img{
+      display: inline;
       width:100%;
     }
   }
-
+  .foto:hover{
+    box-shadow: 0 0 50px var(--color-2);
+  }
+  .contact{
+    display:none;
+  }
   .foto::after{
     position:absolute;
     content: '';
@@ -157,6 +179,7 @@ const NavContainer = styled.nav`
     border:solid 1px var(--color-2);
     transition: all 1000ms ease;
     z-index:-1;
+    cursor: url('./icon/pointer.png'), auto;
   }
 
   .foto:hover::after{
@@ -179,7 +202,7 @@ const NavContainer = styled.nav`
     left: 28px;
     -webkit-text-stroke: .5px var(--color-1) ;
     transition: all 800ms ease;
- 
+    
   }
   .foto:hover::before{
     color: var(--color-2t);
@@ -187,15 +210,14 @@ const NavContainer = styled.nav`
     transition: all 800ms ease;
     -webkit-text-stroke: .5px var(--color-4) ;
   }
-
   .switch {
-  background: var(--color-2ttt);
+  background: var(--color-2tt);
+  border: 2px solid var(--color-2);
   width: 60px;
-  height: 32px;
+  height: 36px;
   border-radius: 30px;
-  border: none;
   outline: none;
-  cursor: pointer;
+  cursor: url('./icon/pointer.png'), auto;
   position: absolute; 
   display: none;
   right:60px;
@@ -215,28 +237,36 @@ const NavContainer = styled.nav`
   right: unset;
   background-image: url('https://i.pinimg.com/originals/9b/d6/2e/9bd62eb341dcd095bf01657f50d37257.jpg');
   background-size: cover;
- 
 }
-
-
 .active::after {
   right: 0;
   left: unset;
   
 }
- 
-
   .btn__menu{
     position: fixed;
     z-index:100;
     animation: transform 500ms easy;
-    right: 10px
+    right: 10px;
+    cursor: url('./icon/pointer.png'), auto;
   }
   .btn__menu:hover{
     transform: scale(1.03);
     animation: transform 500ms easy;
+    cursor: url('./icon/pointer.png'), auto;
   }
-
+  .nav_mail{
+    writing-mode: vertical-rl;
+    position: absolute;
+    top:20px;
+    left:40px;
+    transform: translateY(-50%);
+    transform: rotate(200deg);
+    padding: 10px; 
+  }
+  .nav_mail:hover{
+    border:0;
+  }
   .nav__links{
     font-size:1.5rem;
     position: absolute;
@@ -252,21 +282,16 @@ const NavContainer = styled.nav`
     justify-content: center;
     gap: 25px;
     color: var(--color-1);
-
+    transition:all .5s ease; 
   }
-  
   .nav__links.active{
-    background-color: var(--color-1);
+    background-color: var(--color-1ttt);
     top:0px; 
-    right: 0px; 
     padding-top: 0;
     z-index:50;
     backdrop-filter: blur(3px); 
-    
-/* opacity:.5; */
     transition:all .5s ease; 
   }
-  
   .nav_flex{
     display:flex;
     flex-direction: column;
@@ -301,7 +326,15 @@ const NavContainer = styled.nav`
   .nav__word.active{
     
   }
-  
+  @media (max-width:769px) {
+    .nav__links{
+      left:-2000px;
+    }
+    .nav__links.active{
+      left:0;
+    }
+    
+  }
  @media (min-width: 768px) {
     
     .btn__menu{
@@ -312,21 +345,32 @@ const NavContainer = styled.nav`
     right:80px;
     z-index: 10;
   }
+  .foto{
+    margin-right: 10px;
+  }
+  .contact{
+    display:flex;
+    color: var(--color-1);
+  }
+  .nav_mail{
+    display:none;
+  }
      .nav__links{
     display: flex; 
     height: 600px;
     margin:auto;
     top:350px;
-    right:0;
+    right:0px;
     max-width: clamp(170px , 50vw, 200px);
     background: none;
   }
      .nav__links.active{
-    display: fixed;
+    display: flex;
     height: 600px;
     margin:none;
+    /* width: max-content; */
     top:350px;
-    right: 0; 
+    right: 0px; 
     z-index:1;
     backdrop-filter: none; 
     transition:all 1s ease; 

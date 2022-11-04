@@ -14,7 +14,7 @@ const About = () => {
       </div>
       <div className='info'>
         <p>
-          Hello! my name is Steeven Sanchez, I enjoy to create different web pages that could be very intereting for the user.
+          Hello! I'm Steeven Sanchez, I enjoy to create different web pages that could be very intereting for the user.
           In general, I like programing world and I'm in the last semester of Computer Sciences in <span><a href="https://www.yachaytech.edu.ec" target='_blank'>Yachay Yech University</a></span>, but the field that interests me most is web programming.
         </p>
          <p>

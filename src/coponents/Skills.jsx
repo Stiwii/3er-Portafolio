@@ -10,40 +10,27 @@ const Skills = () => {
       <div className='skills__container vista'>
         <h2><span>SKILLS</span> </h2>
         <div className='languages'>
-          <h3><span>Programming Languages</span></h3>
-          <ul>
-            <li><span>▶ </span> Python</li>
-            <li><span>▶ </span> C/C++ C#</li>
-            <li><span>▶ </span> JavaScript</li>
-          </ul>
-        </div>
-        <div className="technologies">
-          <h3>Technologies</h3>
-          <ul>
-            <li><span>▶ </span> HTML5</li>
-            <li><span>▶ </span> Css</li>
-            <li><span>▶ </span> Node.js</li>
-            <li><span>▶ </span> PostgreSQL</li>
-            <li><span>▶ </span> MongoDB(NoSQL)</li>
-          </ul>
+          <h3><span>Programming Languages and Technologies</span></h3>
+          <div className="icon_p">
+            <img src="./skills/html.png" alt="" className='img_icon uno'/>
+            <img src='./skills/javascript.png' alt="" className='img_icon dos'/>
+                                             
+            <img src="./skills/react.png" alt="" className='img_icon uno'/>
+            <img src='./skills/css.png' alt="" className='img_icon tres'/>
+        
+            <img src='./skills/python.png' alt="" className='img_icon dos'/>
+
+            <img src="./skills/mongodb.png" alt="" className='img_icon tres'/>
+
+            <img src="./skills/postgreSQL.png" alt="" className='img_icon uno'/>
+
+            <img src="./skills/cpp.png" alt="" className='img_icon dos'/>
+
+          </div>
         </div>
 
         <div className='container_icons'>
-          {/* <div className="icon1">
-            <img src='public/skills/css.png' alt="" />
-          </div>
-          <div className="icon2">
-            <img src='./public/skills/python.png' alt="" />
-          </div>
-          <div className="icon3">
-            <img src='./public/skills/javascript.png' alt="" />
-          </div>
-          <div className="icon4">
-            <img src='./public/skills/react.png' alt="" />
-          </div>
-          <div className="icon5">
-            <img src='./public/skills/nodejs.png' alt="" />
-          </div> */}
+
         </div>
       </div>
 
@@ -56,5 +43,66 @@ const Skills = () => {
 export default Skills
 
 const SkillSection = styled.div`
+  @keyframes icons_skill {
+    0%{
+        transform:rotate(0deg) ;
+    }
+    35%{
+        transform:rotate(30deg) ;
+    }
+    70%{
+        transform:rotate(-30deg) ;
+    }
+    100%{
+        transform:rotate(0deg) ;
+    }
+  }
+  @keyframes icons_skill_2 {
+    0%{
+        transform:rotate(0deg) ;
+    }
+    35%{
+        transform:translateY(30px) ;
+    }
+    /* 70%{
+        transform:rotate(-30deg) ;
+    } */
+    100%{
+        transform:rotate(0deg) ;
+    }
+  }
+  @keyframes icons_skill_3 {
+    0%{
+        transform:rotate(0deg) ;
+    }
+    35%{
+        transform:translateX(-10px) ;
+    }
+    70%{
+        transform:translateY(-20px) ;
+    }
+    100%{
+        transform:rotate(0deg) ;
+    }
+  }
 margin-top: 120px;
+.icon_p{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: max-content;
+  justify-content:center;
+  align-items:center; 
+  img{
+    width: 100px;
+  }
+  .uno{
+      animation: icons_skill  11s ease infinite;
+    }
+    .dos{
+      animation: icons_skill_2  11s ease infinite;
+    }
+    .tres{
+      animation: icons_skill_3  11s ease infinite;
+    }
+}
   `

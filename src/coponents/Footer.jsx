@@ -17,12 +17,11 @@ const Footer = ({setChangeNocturn,changeNocturn}) => {
     <a href="https://github.com/Stiwii" target='_blanck'> <AiFillGithub/> </a>
       </div>
       <div className='instagram icon_contact'>
-<a href="https://www.instagram.com/sanchez.steeven/" target='_blanck'> <AiFillInstagram /> </a>
+    <a href="https://www.instagram.com/sanchez.steeven/" target='_blanck'> <AiFillInstagram /> </a>
       </div>
 
       <button className={`switch ${changeNocturn ? 'active' : ''}`} onClick={handleNoc}></button>
 
-      <div className='mail'><a href="mailto:stiwers1997@gmail.com">stiwers1997@gmail.com</a></div>
     </FootDiv>
   
   )
@@ -33,41 +32,38 @@ export default Footer
 const FootDiv = styled.div`
 position: relative;
 display:flex;
-gap: 50px;
-padding-left: 30px;
+justify-content: space-around;
+padding-left: 20px;
 padding-top: 10px;
 height:80px;
 
 max-width: 1080px;
 margin:auto;
-left:0;
-box-shadow: 20px 0px 50px var(--color-2t);
+padding-right: 100px;
+
+box-shadow: 20px 0px 50px red;
     background: rgba(255, 255, 255, 0.1);
     
     border-left: 1px solid var(--color-1t) ;
     border-top: 1px solid  var(--color-1t);
     backdrop-filter: blur(3px);  
+    /* background-color: red; */
 
-.mail{
-  cursor: pointer;
-  position: absolute; 
-  right:25px;
-  top:40px;
-  font-family: 'Times New Roman', Times, serif;
-  text-decoration: underline;
-}
+
+
 .switch {
-  background: var(--color-2);
+  background: var(--color-2tt);
   width: 60px;
-  height: 32px;
+  height: 36px;
   border-radius: 30px;
-  border: none;
+  border: 2px solid var(--color-2);
   outline: none;
-  cursor: pointer;
+  cursor: url('./icon/pointer.png'), auto;
   position: absolute; 
   display: flex;
   right:25px;
-  bottom:40px;
+  bottom:38px;
+  z-index: 2;
 }
 .switch::after {
   content: "";
@@ -83,23 +79,23 @@ box-shadow: 20px 0px 50px var(--color-2t);
   display: block;
   margin: 2px; 
   right: unset;
-
- 
 }
-
-
 .active::after {
   right: 0;
   left: unset;
-  
 }
-
+.switch:hover{
+  box-shadow: 0 0 8px var(--color-2);
+}
 .icon_contact{
   font-size: 2rem;
+  /* background-color:red; */
+  height:max-content;
 }
 .icon_contact:hover{
-  color: #9b6500;
-  cursor: pointer;
+  color: rgb(192,64,6);
+  cursor: url('./icon/pointer.png'), auto;
+  transform: scale(1.3);
 }
 @media (min-width: 768px) {
   .switch{

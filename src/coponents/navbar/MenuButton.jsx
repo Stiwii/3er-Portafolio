@@ -24,7 +24,7 @@ const Menu = styled.div`
   height: 30px;
   margin: 10px 10px;
   position: relative;
-  cursor: pointer;
+  cursor: url('./icon/pointer.png'), pointer;
   display: inline-block;
 }
 .nav-icon-5 span{

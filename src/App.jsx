@@ -37,7 +37,7 @@ function App() {
             </div>
             <div className='back_nav'></div>
             <div className='navbar'>
-              <Navbar
+              <Navbar 
                 setClicked={setClicked}
                 clicked={clicked}
                 setIsLoading={setIsLoading}
@@ -58,10 +58,7 @@ function App() {
               <section id='experience'>
               <Experience />
               </section>
-              
-              
-             
-              
+        
             </div>
             <div className='footer'>
               <Footer
