@@ -7,7 +7,7 @@
   background-color: var(--color-1);
   color: var(--color-2);
   cursor: url('./icon/normal.png'), auto; 
-  
+  z-index: 10;
 }
 .back_nav{
   position: fixed;

@@ -25,8 +25,6 @@ const Navbar = ({ setClicked, clicked, setIsLoading, setChangeNocturn, changeNoc
   const handleNoc = () => {
     setChangeNocturn(!changeNocturn)
   }
-
-
   return (
       <NavContainer>
        
