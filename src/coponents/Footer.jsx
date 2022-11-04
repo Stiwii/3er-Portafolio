@@ -88,12 +88,12 @@ box-shadow: 20px 0px 50px red;
   box-shadow: 0 0 8px var(--color-2);
 }
 .icon_contact{
-  font-size: 2rem;
+  font-size: 2.5rem;
   /* background-color:red; */
   height:max-content;
 }
 .icon_contact:hover{
-  color: rgb(192,64,6);
+  color: rgb(252,144,0);
   cursor: url('./icon/pointer.png'), auto;
   transform: scale(1.3);
 }

@@ -14,14 +14,13 @@
   height:100vh;
   background-image: url('https://38.media.tumblr.com/fe2be7992406f6a08369cce31b3154fc/tumblr_n9af8lWC711r72ht7o1_r1_500.gif');
   background-size: cover;
-opacity: 0.2;
+  opacity: 0.2;
   top: 0; 
   right: 0;
-z-index: 1;
+  z-index: 1;
 }
 
 .triangle__container{
-    
     height:600px;
     max-width: 1000px;
     position:fixed;
@@ -99,17 +98,7 @@ z-index: 1;
     }
   }
 
-  @keyframes icons_skill {
-    0%{
-        transform:rotate(0deg) translateY(0px);
-    }
-    50%{
-        transform:rotate(45deg) translateY(30px);
-    }
-    100%{
-        transform:rotate(0deg) translateY(0px);
-    }
-  }
+
 
 
 .app{

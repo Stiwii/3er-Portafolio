@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import About from './coponents/About'
-import Experience from './coponents/Experience'
 import Footer from './coponents/Footer'
 import Home from './coponents/Home'
 import Load from './coponents/load/Load'
@@ -55,9 +54,9 @@ function App() {
               <section id='skills'>
               <Skills />
               </section>
-              <section id='experience'>
+              {/* <section id='experience'>
               <Experience />
-              </section>
+              </section> */}
         
             </div>
             <div className='footer'>

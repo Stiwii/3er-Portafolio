@@ -286,7 +286,7 @@ const NavContainer = styled.div`
   }
   .nav__links.active{
     background-color: var(--color-1ttt);
-    top:0px; 
+    top:-30px; 
     padding-top: 0;
     z-index:50;
     backdrop-filter: blur(3px); 

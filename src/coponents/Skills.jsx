@@ -96,13 +96,13 @@ margin-top: 120px;
     width: 100px;
   }
   .uno{
-      animation: icons_skill  11s ease infinite;
+      animation: icons_skill  30s ease infinite;
     }
     .dos{
-      animation: icons_skill_2  11s ease infinite;
+      animation: icons_skill_2  25s ease infinite;
     }
     .tres{
-      animation: icons_skill_3  11s ease infinite;
+      animation: icons_skill_3  20s ease infinite;
     }
 }
   `
