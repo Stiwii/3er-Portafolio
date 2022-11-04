@@ -37,7 +37,7 @@ export default Home
 
 const HomeSection = styled.div`
   position:relative;
-  /* display: flex; */
+  display: flex;
   cursor: url('./icon/normal.png'), auto; 
   @keyframes rotate1 {
     0%{
