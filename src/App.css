@@ -7,6 +7,7 @@
   background-color: var(--color-1);
   color: var(--color-2);
   cursor: url('./icon/normal.png'), auto; 
+  
 }
 .back_nav{
   position: fixed;
@@ -203,6 +204,10 @@ ul{
   font-size: clamp(0.5rem, 5vw, 1.7rem);
   margin: 20px;
   font-family: one-piece;
+}
+
+a{
+  cursor: url('./icon/pointer.png'), auto;
 }
 
 @media (min-width: 768px) {
