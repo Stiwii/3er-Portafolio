@@ -40,7 +40,7 @@ const HomeSection = styled.div`
   display: flex;
   cursor: url('./icon/normal.png'), auto; 
 
-  div{
+  div,h1,h2,h3,h4,p,ul,li{
     cursor: url('./icon/normal.png'), auto; 
   }
   @keyframes rotate1 {
