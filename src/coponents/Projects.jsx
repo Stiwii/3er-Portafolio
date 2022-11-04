@@ -53,15 +53,15 @@ const Projects = () => {
             <a href='https://pokedex-steeven-sanchez.netlify.app' target="_blank">
               <article className='project'>
                 <header>
-                  <img className='img' src='src/imagenes/project1.png' alt="" />
+                  <img className='img' src='imagenes/project1.png' alt="" />
                 </header>
                 <h3><span>POKEDEX</span> </h3>
               
                 <ul>
-                  <li>▶  Design and development of fully responsive web application;
+                  <li>Design and development of fully responsive web application;
                   </li>
-                  <li>▶  Custom hooks, components, contexts, stores, global variables;</li>
-                  <li>▶  The application was tested by non-programmers with an excellent interface result.</li>
+                  <li>Custom hooks, components, contexts, stores, global variables;</li>
+                  <li>The application was tested by non-programmers with an excellent interface result.</li>
                 </ul>
               </article>
                 </a>
@@ -71,14 +71,14 @@ const Projects = () => {
             <a href='https://rick-morty-app-st-san.netlify.app' target="_blank">
               <article className='project'>
                 <header>
-                  <img src='src/imagenes/project2.png' alt="" />
+                  <img src='imagenes/project2.png' alt="" />
                 </header>
                 <h3><span>RICK AND MORTY APP</span>  </h3>
                 <ul>
-                  <li>▶  Design and development of fully responsive web application;
+                  <li>Design and development of fully responsive web application;
 </li>
-                  <li>▶  User friendly interface;</li>
-                  <li>▶  Implementation of React JS technologies as components, asynchronous calls, global variable contexts, hooks;</li>
+                  <li>User friendly interface;</li>
+                  <li>Implementation of React JS technologies as components, asynchronous calls, global variable contexts, hooks;</li>
                 </ul>
               </article>
             </a>
@@ -87,47 +87,34 @@ const Projects = () => {
             <a href='https://crud-project-steeven-sanchez.netlify.app' target="_blank">
               <article className='project'>
                 <header>
-                  <img src='src/imagenes/project3.png' alt="" />
+                  <img src='imagenes/project3.png' alt="" />
                 </header>
                 <h3>CRUD project</h3>
                 <ul>
-                  <li>▶  Create, Read, Update and Delete users from a backend provided by Academlo.
+                  <li>Create, Read, Update and Delete users from a backend provided by Academlo.
 </li>
-                  <li>▶  Fully responsive model.</li>
-                  <li>▶  Use of manners.</li>
-                  <li>▶  Clear and defined design using CSS.</li>
+                  <li>Fully responsive model.</li>
+                  <li>Use of manners.</li>
+                  <li>Clear and defined design using CSS.</li>
                 </ul>
               </article>
             </a>
           </SwiperSlide>
-          <SwiperSlide>
-            <a href='https://proyecto-steeven.netlify.app' target="_blank">
-              <article className='project'>
-                <header>
-                  <img src='src/imagenes/project5.png' alt="" />
-                </header>
-                <h3>RANDOM PHRASES</h3>
-                <ul>
-                <li>▶   Design and development of fully responsive web application.</li>
-                  <li>▶  Managment of json documents</li>
-                  <li>▶  Clear and defined design using CSS.</li>
-                </ul>
-              </article>
-            </a>
-          </SwiperSlide>
+
           <SwiperSlide>
             <a href='https://weather-app-steeven-sanchez.netlify.app' target="_blank">
               <article className='project'>
                 <header>
-                  <img src='src/imagenes/project4.png' alt="" />
+                  <img src='imagenes/project4.png' alt="" />
                 </header>
+                
                 <h3>
                 WEATHER-APP
                 </h3>
                 <ul>
-                  <li>▶   Design and development of fully responsive web application.</li>
-                  <li>▶  Asynchronous calls, hooks.</li>
-                  <li>▶  Clear and defined design using CSS.</li>
+                  <li>Design and development of fully responsive web application.</li>
+                  <li>Asynchronous calls, hooks.</li>
+                  <li>Clear and defined design using CSS.</li>
                 </ul>
               </article>
             </a>
@@ -147,14 +134,70 @@ const Projects = () => {
 
 export default Projects
 
-const ProjectSection = styled.section`
-  margin-top:120px;
+const ProjectSection = styled.div`
+ position:relative;
+  
   cursor: url('./icon/normal.png'), auto; 
- div,h1,h2,h3,h4,p,ul,li{
+ div,h1,h2,h3,h4,p,ul,li,article{
     cursor: url('./icon/normal.png'), auto; 
   }
-  a{
+  img{
   cursor: url('./icon/pointer.png'), auto; 
  }
+
+ .project{
+  position: relative;
+ }
+ .header{
+  display:absolute;
+  justify-content: center;
+  align-items: center;
+  background-color:blue;
+  width:100%;
+  height:100%;
+  top: 0;
+  
+ }
+ img{
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+  max-width:100%;
+  opacity:0;
+  height:100%;
+  transition: all 1s ease;
+  border-radius: 10px;
+ }
+ img:hover{
+    opacity:1;
+    transition: all 1s ease;
+ }
+
+ h3{
+  padding:0;
+ }
+
+ .swiper-button-next, .swiper-button-prev{
+    z-index: 11;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    background-color: #ffffffa3;
+    height: 50px;
+    width:50px;
+    color:red;
+  }
+
+  .swiper-button-next::after, .swiper-button-prev::after{
+    font-size:25px;
+    font-weight: 1000px;
+    cursor: url('./icon/pointer.png'), auto; 
+  }
+
+  .swiper{
+    padding: 0 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
 
 `

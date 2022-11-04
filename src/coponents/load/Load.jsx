@@ -19,7 +19,8 @@ export default Load
 const LoadContainer = styled.div`
     display:flex;
     position:relative;
-    width: 100%;
+    width: 100vw;
+    
     height: 100vh;
     align-items: center;
     justify-content:center;
