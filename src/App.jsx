@@ -54,10 +54,7 @@ function App() {
               <section id='skills'>
               <Skills />
               </section>
-              {/* <section id='experience'>
-              <Experience />
-              </section> */}
-        
+
             </div>
             <div className='footer'>
               <Footer
