@@ -359,7 +359,7 @@ const NavContainer = styled.div`
     height: 600px;
     margin:auto;
     top:350px;
-    right:0px;
+    right:10px;
     max-width: clamp(170px , 50vw, 200px);
     background: none;
   }

@@ -6,7 +6,7 @@ import { BsChevronDown } from 'react-icons/bs';
 
 const Home = () => {
   return (
-    <>
+    
       <HomeSection id='/home'>
       <div className='background'>
             
@@ -30,7 +30,6 @@ const Home = () => {
         </div>
       </HomeSection>
      
-    </>
   )
 }
 
@@ -38,6 +37,7 @@ export default Home
 
 const HomeSection = styled.div`
   position:relative;
+  /* display: flex; */
   cursor: url('./icon/normal.png'), auto; 
   @keyframes rotate1 {
     0%{
@@ -76,5 +76,8 @@ const HomeSection = styled.div`
     transition: all 1s ease;
     cursor: url('./icon/pointer.png'), auto; 
   }
+  a{
+  cursor: url('./icon/pointer.png'), auto; 
+ }
   
 `
