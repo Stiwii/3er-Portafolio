@@ -9,8 +9,7 @@
   url('./fonts/one-piece-font.ttf') format('truetype');
 }
 
-html {
-  /* box-sizing: border-box; */
+body {
   scroll-behavior: smooth;
 }
 
