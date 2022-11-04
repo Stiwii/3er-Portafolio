@@ -56,6 +56,9 @@ const HomeSection = styled.div`
         transform:rotate(0deg) translateX(300px);
     }
   }
+
+  z-index:1;
+
   .background{
     background-image:url('https://i.pinimg.com/564x/c3/54/d3/c354d3692b146508b4cd0447817d3f7d.jpg'); 
     position: fixed ;
@@ -73,5 +76,5 @@ const HomeSection = styled.div`
     transition: all 1s ease;
     cursor: url('./icon/pointer.png'), auto; 
   }
-    
+  
 `
