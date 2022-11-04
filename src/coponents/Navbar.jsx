@@ -85,7 +85,7 @@ const NavContainer = styled.div`
     border-left: 1px solid var(--color-1t) ;
     border-top: 1px solid  var(--color-1t);
     backdrop-filter: blur(3px);  
-  
+    cursor: url('./icon/normal.png'), auto;
   
   @keyframes moverDiagonal{
     0%{background-position: 0 50%;}
@@ -159,6 +159,7 @@ const NavContainer = styled.div`
   }
   .foto:hover{
     box-shadow: 0 0 50px var(--color-2);
+    cursor: url('./icon/pointer.png'), auto;
   }
   .contact{
     display:none;
@@ -199,7 +200,7 @@ const NavContainer = styled.div`
     left: 28px;
     -webkit-text-stroke: .5px var(--color-1) ;
     transition: all 800ms ease;
-    
+    cursor: url('./icon/pointer.png'), auto;
   }
   .foto:hover::before{
     color: var(--color-2t);
@@ -308,7 +309,7 @@ const NavContainer = styled.div`
     text-transform: capitalize;
     font-size: 30px;
     -webkit-text-stroke: 2px var(--color-2) ;
-    
+    cursor: url('./icon/pointer.png'), auto;
 
   }
   .nav__word:hover{
@@ -348,6 +349,7 @@ const NavContainer = styled.div`
   .contact{
     display:flex;
     color: var(--color-1);
+    cursor: url('./icon/pointer.png'), auto;
   }
   .nav_mail{
     display:none;
