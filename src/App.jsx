@@ -6,6 +6,7 @@ import Footer from './coponents/Footer'
 import Home from './coponents/Home'
 import Load from './coponents/load/Load'
 import Navbar from './coponents/Navbar'
+import Projects from './coponents/Projects'
 import Skills from './coponents/Skills'
 
 function App() {
@@ -54,7 +55,9 @@ function App() {
               <section id='skills'>
               <Skills />
               </section>
-
+              <section id='projects'>
+              <Projects />
+              </section>
             </div>
             <div className='footer'>
               <Footer
