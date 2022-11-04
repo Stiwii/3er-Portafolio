@@ -48,9 +48,11 @@ box-shadow: 20px 0px 50px red;
     border-top: 1px solid  var(--color-1t);
     backdrop-filter: blur(3px);  
     /* background-color: red; */
+    cursor: url('./icon/normal.png'), auto; 
 
-
-
+a{
+  cursor: url('./icon/pointer.png'), auto; 
+}
 .switch {
   background: var(--color-2tt);
   width: 60px;

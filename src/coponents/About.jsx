@@ -41,5 +41,8 @@ export default About
 
 const AboutSection = styled.div`
  margin-top: 120px;
- 
+ cursor: url('./icon/normal.png'), auto; 
+ a{
+  cursor: url('./icon/pointer.png'), auto; 
+ }
 `
