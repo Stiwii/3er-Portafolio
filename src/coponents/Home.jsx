@@ -39,6 +39,10 @@ const HomeSection = styled.div`
   position:relative;
   display: flex;
   cursor: url('./icon/normal.png'), auto; 
+
+  div{
+    cursor: url('./icon/normal.png'), auto; 
+  }
   @keyframes rotate1 {
     0%{
         transform: rotate(0deg) translateX(300px);

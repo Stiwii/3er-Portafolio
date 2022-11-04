@@ -217,6 +217,9 @@ ul{
 a{
   cursor: url('./icon/pointer.png'), auto;
 }
+div{
+  cursor: url('./icon/normal.png'), auto; 
+}
 
 @media (min-width: 768px) {
   section{
