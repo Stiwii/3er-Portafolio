@@ -38,7 +38,7 @@ export default Home
 
 const HomeSection = styled.div`
   position:relative;
-
+  cursor: url('./icon/normal.png'), auto; 
   @keyframes rotate1 {
     0%{
         transform: rotate(0deg) translateX(300px);
@@ -67,9 +67,11 @@ const HomeSection = styled.div`
     top:100px;
     left:200px;
     animation: rotate1 20s ease infinite;
+    cursor: url('./icon/normal.png'), auto; 
   }
   .react{
     transition: all 1s ease;
+    cursor: url('./icon/pointer.png'), auto; 
   }
     
 `
