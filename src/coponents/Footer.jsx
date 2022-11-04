@@ -49,6 +49,9 @@ box-shadow: 20px 0px 50px red;
     backdrop-filter: blur(3px);  
     /* background-color: red; */
     cursor: url('./icon/normal.png'), auto; 
+    div,h1,h2,h3,h4,p,ul,li{
+    cursor: url('./icon/normal.png'), auto; 
+  }
 
 a{
   cursor: url('./icon/pointer.png'), auto; 

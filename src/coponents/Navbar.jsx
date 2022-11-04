@@ -86,7 +86,9 @@ const NavContainer = styled.div`
     border-top: 1px solid  var(--color-1t);
     backdrop-filter: blur(3px);  
     cursor: url('./icon/normal.png'), auto;
-  
+    div,h1,h2,h3,h4,p,ul,li{
+    cursor: url('./icon/normal.png'), auto; 
+  }
   @keyframes moverDiagonal{
     0%{background-position: 0 50%;}
     50%{background-position: 100 50%;}

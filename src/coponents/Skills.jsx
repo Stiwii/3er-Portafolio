@@ -43,6 +43,15 @@ const Skills = () => {
 export default Skills
 
 const SkillSection = styled.div`
+ cursor: url('./icon/normal.png'), auto; 
+ div,h1,h2,h3,h4,p,ul,li{
+    cursor: url('./icon/normal.png'), auto; 
+  }
+  a{
+  cursor: url('./icon/pointer.png'), auto; 
+ }
+
+
   @keyframes icons_skill {
     0%{
         transform:rotate(0deg) ;
@@ -92,6 +101,7 @@ margin-top: 120px;
   max-width: max-content;
   justify-content:center;
   align-items:center; 
+  gap:20px;
   img{
     width: 100px;
   }
@@ -104,5 +114,12 @@ margin-top: 120px;
     .tres{
       animation: icons_skill_3  20s ease infinite;
     }
+}
+
+
+@media (min-width: 768px){
+  .icon_p{
+    gap:50px;
+  }
 }
   `
