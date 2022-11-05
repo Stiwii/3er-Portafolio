@@ -9,7 +9,7 @@
   url('./fonts/one-piece-font.ttf') format('truetype');
 }
 
-body {
+html {
   scroll-behavior: smooth;
 }
 

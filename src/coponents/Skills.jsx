@@ -12,8 +12,8 @@ const Skills = () => {
         <div className='languages'>
           <h3><span>Programming Languages and Technologies</span></h3>
           <div className="icon_p">
-            <img src="./skills/html.png" alt="" className='img_icon uno'/>
             <img src='./skills/javascript.png' alt="" className='img_icon dos'/>
+            <img src="./skills/html.png" alt="" className='img_icon uno'/>
                                              
             <img src="./skills/react.png" alt="" className='img_icon uno'/>
             <img src='./skills/css.png' alt="" className='img_icon tres'/>

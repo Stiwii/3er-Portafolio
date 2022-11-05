@@ -181,10 +181,13 @@ const ProjectSection = styled.div`
     z-index: 11;
     border-radius: 50%;
     aspect-ratio: 1;
-    background-color: #ffffffa3;
+    background-color: var(--color-2) ;
     height: 50px;
     width:50px;
-    color:red;
+    color: var(--color-1);
+  }
+  .swiper-button-next:hover, .swiper-button-prev:hover{
+    box-shadow: 0 0 8px var(--color-1);
   }
 
   .swiper-button-next::after, .swiper-button-prev::after{
