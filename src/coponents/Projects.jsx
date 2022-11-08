@@ -50,10 +50,11 @@ const Projects = () => {
 
         >
           <SwiperSlide>
-            <a href='https://pokedex-steeven-sanchez.netlify.app' target="_blank">
               <article className='project'>
                 <header>
+            <a href='https://pokedex-steeven-sanchez.netlify.app' target="_blank">
                   <img className='img' src='imagenes/project1.png' alt="" />
+                </a>
                 </header>
                 <h3><span>POKEDEX</span> </h3>
               
@@ -64,14 +65,14 @@ const Projects = () => {
                   <li>The application was tested by non-programmers with an excellent interface result.</li>
                 </ul>
               </article>
-                </a>
             
           </SwiperSlide>
           <SwiperSlide>
-            <a href='https://rick-morty-app-st-san.netlify.app' target="_blank">
               <article className='project'>
                 <header>
+            <a href='https://rick-morty-app-st-san.netlify.app' target="_blank">
                   <img src='imagenes/project2.png' alt="" />
+            </a>
                 </header>
                 <h3><span>RICK AND MORTY APP</span>  </h3>
                 <ul>
@@ -81,13 +82,13 @@ const Projects = () => {
                   <li>Implementation of React JS technologies as components, asynchronous calls, global variable contexts, hooks;</li>
                 </ul>
               </article>
-            </a>
           </SwiperSlide>
           <SwiperSlide>
-            <a href='https://crud-project-steeven-sanchez.netlify.app' target="_blank">
               <article className='project'>
                 <header>
+            <a href='https://crud-project-steeven-sanchez.netlify.app' target="_blank">
                   <img src='imagenes/project3.png' alt="" />
+            </a>
                 </header>
                 <h3>CRUD project</h3>
                 <ul>
@@ -98,14 +99,14 @@ const Projects = () => {
                   <li>Clear and defined design using CSS.</li>
                 </ul>
               </article>
-            </a>
           </SwiperSlide>
 
           <SwiperSlide>
-            <a href='https://weather-app-steeven-sanchez.netlify.app' target="_blank">
               <article className='project'>
                 <header>
+            <a href='https://weather-app-steeven-sanchez.netlify.app' target="_blank">
                   <img src='imagenes/project4.png' alt="" />
+            </a>
                 </header>
                 
                 <h3>
@@ -117,7 +118,6 @@ const Projects = () => {
                   <li>Clear and defined design using CSS.</li>
                 </ul>
               </article>
-            </a>
           </SwiperSlide>
 
         </Swiper>
@@ -135,6 +135,7 @@ const Projects = () => {
 export default Projects
 
 const ProjectSection = styled.div`
+margin-top: 100px;
  position:relative;
   
   cursor: url('./icon/normal.png'), auto; 
@@ -187,7 +188,9 @@ const ProjectSection = styled.div`
     color: var(--color-1);
   }
   .swiper-button-next:hover, .swiper-button-prev:hover{
-    box-shadow: 0 0 8px var(--color-1);
+    box-shadow: 0 0 20px var(--color-2);
+    background-color: var(--color-4t);
+    cursor: url('./icon/pointer.png'), auto; 
   }
 
   .swiper-button-next::after, .swiper-button-prev::after{

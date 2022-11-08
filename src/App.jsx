@@ -1,7 +1,9 @@
 
 import { useEffect, useState } from 'react'
+import { Form } from 'react-router-dom'
 import './App.css'
 import About from './coponents/About'
+import Contact from './coponents/Contact'
 import Footer from './coponents/Footer'
 import Home from './coponents/Home'
 import Load from './coponents/load/Load'
@@ -29,7 +31,7 @@ function App() {
           <Load /> :
 
           <div className='app-color'>
-          
+
             <div className="triangle__container">
               <div className=" triangle triangle1"></div>
               <div className=" triangle triangle2"></div>
@@ -37,26 +39,29 @@ function App() {
             </div>
             <div className='back_nav'></div>
             <div className='navbar'>
-              <Navbar 
+              <Navbar
                 setClicked={setClicked}
                 clicked={clicked}
                 setIsLoading={setIsLoading}
                 setChangeNocturn={setChangeNocturn}
-                changeNocturn={changeNocturn} 
+                changeNocturn={changeNocturn}
               />
             </div>
             <div className="App" >
               <section id='home'>
-              <Home />
+                <Home />
               </section>
               <section id='about'>
-              <About />
+                <About />
               </section>
               <section id='skills'>
-              <Skills />
+                <Skills />
               </section>
               <section id='projects'>
-              <Projects />
+                <Projects />
+              </section>
+              <section id='contact'>
+                <Contact />
               </section>
             </div>
             <div className='footer'>

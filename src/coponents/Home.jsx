@@ -25,7 +25,7 @@ const Home = () => {
         </div>
        
         <div>
-          <p><span className='uppercase'>I</span> am a student in the last semester of Computer Science and Full Stack Web Developer, especially in Front End. Currently, I work on creating projects where I focus my knowledge on <span className='react'><a href="https://reactjs.org" target='_blank'>Reactjs</a>. </span> </p>
+          <p> and my especiality is Front End. Currently, I work on creating projects where I focus my knowledge on <span className='react'><a href="https://reactjs.org" target='_blank'>Reactjs</a></span>. By other way I am studying computer science engineering.</p>
         </div>
         </div>
       </HomeSection>
@@ -43,6 +43,7 @@ const HomeSection = styled.div`
   div,h1,h2,h3,h4,p,ul,li{
     cursor: url('./icon/normal.png'), auto; 
   }
+
   @keyframes rotate1 {
     0%{
         transform: rotate(0deg) translateX(300px);

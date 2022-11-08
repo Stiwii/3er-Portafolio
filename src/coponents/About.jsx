@@ -14,7 +14,7 @@ const About = () => {
       </div>
       <div className='info'>
         <p>
-          Hello! I'm Steeven Sanchez, I enjoy to create different web pages that could be very intereting for the user.
+          My complete name is Steeven Geovanny Sanchez Pozo, I enjoy to create different web pages that could be very intereting for the user.
           In general, I like programing world and I'm in the last semester of Computer Sciences in <span><a href="https://www.yachaytech.edu.ec" target='_blank'>Yachay Yech University</a></span>, but the field that interests me most is web programming.
         </p>
          <p>
@@ -40,7 +40,7 @@ const About = () => {
 export default About
 
 const AboutSection = styled.div`
- margin-top: 120px;
+ margin-top: 100px;
  cursor: url('./icon/normal.png'), auto; 
  div,h1,h2,h3,h4,p,ul,li{
     cursor: url('./icon/normal.png'), auto; 

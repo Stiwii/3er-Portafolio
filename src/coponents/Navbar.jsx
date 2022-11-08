@@ -103,6 +103,11 @@ const NavContainer = styled.div`
     outline: solid 1px var(--color-2);
     outline-offset: -6px;
     cursor: url('./icon/pointer.png'), auto;
+    //nombre
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 6) 30%, rgba(255, 255, 0, 6) 70%);
+     -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
     h1{
       width: 100%;
       font-size: 20px;
@@ -113,10 +118,8 @@ const NavContainer = styled.div`
   .nombre:hover{
     outline: solid 6px var(--color-2);
     outline-offset: -6px;
-    background-image: linear-gradient(0deg, rgba(255, 0, 0, 6) 30%, rgba(255, 255, 0, 6) 70%);
-     -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    transition: all 1000ms ease;
+    text-shadow: 0 0 20px var(--color-1);
+    transition: all 500ms ease;
   }
 
   .mail{
@@ -129,20 +132,22 @@ const NavContainer = styled.div`
   max-width: max-content;
   padding-left: 10px;
   padding-right: 10px;
+
+      border-bottom: .5px solid var(--color-2);
+      transition: all 1000ms ease;
 }
 .mail:hover{
   cursor: url('./icon/pointer.png'), auto;
-  background-image: linear-gradient(0deg, 
-    rgba(255, 0, 0, 6) 30%,
-     rgba(255, 255, 0, 6) 70%);
+
+  color: var(--color-1);
+  font-weight: 800;
+  border-bottom: 3px solid var(--color-2);
+  transition: all .5s ease;
+  background-image: linear-gradient(10deg,
+     rgba(255, 255, 0, 8) 10%, 
+    rgba(255, 0, 0, 8) 80%);
      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      /* -webkit-text-stroke: .01px var(--color-2) ; */
-  color: var(--color-1);
-  font-weight: 1000;
-  border-bottom: 3px solid var(--color-2);
-  transition: all 1s ease;
-  
 }
   .foto{
     position:relative;
@@ -155,7 +160,7 @@ const NavContainer = styled.div`
     cursor: url('./icon/pointer.png'), auto;
     margin-right: 70px;
     img{
-      display: inline;
+      /* display: inline; */
       width:100%;
     }
   }
@@ -163,16 +168,13 @@ const NavContainer = styled.div`
     box-shadow: 0 0 50px var(--color-2);
     cursor: url('./icon/pointer.png'), auto;
   }
-  .contact{
-    display:none;
-  }
   .foto::after{
     position:absolute;
     content: '';
     background-color: var(--color-1t);
     background-image: url('https://www.gifcen.com/wp-content/uploads/2022/05/dragon-ball-z-gif-11.gif');
     background-size: cover;
-    opacity: 0.2;
+    opacity: 0.6;
     width: 100%;
     height: 100%;
     transform: translateX(-100%);
@@ -181,10 +183,10 @@ const NavContainer = styled.div`
     z-index:-1;
     cursor: url('./icon/pointer.png'), auto;
   }
-
   .foto:hover::after{
-    opacity: 1 ;
+    opacity: 0.9 ;
     transition: all 1000ms ease;
+    cursor: url('./icon/pointer.png'), auto;
   }
   .foto::before{
     position:absolute;
@@ -209,15 +211,19 @@ const NavContainer = styled.div`
     z-index: -1;
     transition: all 800ms ease;
     -webkit-text-stroke: .5px var(--color-4) ;
+    cursor: url('./icon/pointer.png'), auto;
+  }
+  .contact{ 
+  display:none;
   }
   .switch {
-  background: var(--color-2tt);
-  border: 2px solid var(--color-2);
-  width: 60px;
-  height: 36px;
-  border-radius: 30px;
-  outline: none;
-  cursor: url('./icon/pointer.png'), auto;
+    background: var(--color-2tt);
+    border: 2px solid var(--color-2);
+    width: 60px;
+    height: 36px;
+    border-radius: 30px;
+    outline: none;
+    cursor: url('./icon/pointer.png'), auto;
   position: absolute; 
   display: none;
   right:60px;
@@ -240,8 +246,7 @@ const NavContainer = styled.div`
 }
 .active::after {
   right: 0;
-  left: unset;
-  
+  left: unset; 
 }
   .btn__menu{
     position: fixed;
@@ -263,9 +268,12 @@ const NavContainer = styled.div`
     transform: translateY(-50%);
     transform: rotate(200deg);
     padding: 10px; 
+    border:0;
+    border-left: 0px solid var(--color-2);
   }
   .nav_mail:hover{
     border:0;
+    border-left: 3px solid var(--color-2);
   }
   .nav__links{
     font-size:1.5rem;
@@ -312,16 +320,17 @@ const NavContainer = styled.div`
     font-size: 30px;
     -webkit-text-stroke: 2px var(--color-2) ;
     cursor: url('./icon/pointer.png'), auto;
-
+    color: var(--color-2);
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 6) 30%, rgba(255, 255, 0, 6) 70%);
+     
+     -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
   .nav__word:hover{
     transform:translateY(-5px) scale(1.01);
     transition: all 500ms ease;
-    color: var(--color-2);
-    background-image: linear-gradient(0deg, rgba(255, 0, 0, 6) 30%, rgba(255, 255, 0, 6) 70%);
-     display: inline-block;
-     -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    color: rgb(252,144,0);
+    display: inline-block;
   }
   .nav__word.active{
     

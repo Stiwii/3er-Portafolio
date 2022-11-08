@@ -94,7 +94,7 @@ const SkillSection = styled.div`
         transform:rotate(0deg) ;
     }
   }
-margin-top: 120px;
+margin-top: 100px;
 .icon_p{
   display: flex;
   flex-wrap: wrap;
