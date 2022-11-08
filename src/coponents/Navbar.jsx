@@ -331,6 +331,7 @@ const NavContainer = styled.div`
     transition: all 500ms ease;
     color: rgb(252,144,0);
     display: inline-block;
+    text-shadow: 0 0 20px var(--color-1);
   }
   .nav__word.active{
     

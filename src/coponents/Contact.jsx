@@ -25,27 +25,27 @@ const Contact = () => {
 
         <h2>Contact</h2>
         <form ref={form} onSubmit={sendEmail}>
-          <div>
+          <div className='form_div'>
             <label>Name: </label>
             <input type="text" name="user_name" />
           </div>
-          <div>
+          <div className='form_div'>
             <label>Email: </label>
             <input type="email" name="user_email" />
           </div>
-          <div>
+          <div className='form_div'>
             <label>Company: </label>
             <input type="text" name="user_company" />
           </div>
-          <div>
+          <div className='form_div'>
             <label>Subject: </label>
             <input type="text" name="user_subject" />
           </div>
-          <div>
+          <div className='form_div'>
             <label>Message: </label>
             <textarea name="message" />
           </div>
-          <div>
+          <div className='form_div send'>
             <input type="submit" value="Send" />
           </div>
         </form>
@@ -58,4 +58,18 @@ export default Contact
 
 const Formulario = styled.div`
 margin-top: 50px;
+display:flex;
+.contact__container{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.form_div{
+  display: flex;
+  flex-direction:column;
+  
+}
+.send{
+
+}
 `
