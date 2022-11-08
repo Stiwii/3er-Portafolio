@@ -300,7 +300,7 @@ div{
 }
 
 .imagen_2{
-  background-image:url('./movibles/goku.png');
+  background-image:url('/movibles/goku.png');
   position: absolute;
   background-size:cover;
   height:180px;
@@ -312,7 +312,7 @@ div{
 }
 
 .imagen_3{
-  background-image:url('./movibles/pan.png');
+  background-image:url('/movibles/pan.png');
   position: absolute;
   background-size:cover;
   height:120px;
@@ -325,7 +325,7 @@ div{
 }
 
 .imagen_4{
-  background-image:url('./movibles/black.png');
+  background-image:url('/movibles/black.png');
   position: absolute;
   background-size:cover;
   height:140px;
