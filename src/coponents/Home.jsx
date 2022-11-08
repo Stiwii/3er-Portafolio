@@ -9,10 +9,13 @@ const Home = () => {
     
       <HomeSection id='/home'>
       <div className='background'>
-            
-            </div>
+      </div>
+
 
         <div className="home__container vista">
+          <div className='imagen_1'>
+
+          </div>
           <div>
              <h2 className='greeting'><span className='greeting__span'><span>Welcome</span> , my name is </span> </h2>
         </div>
@@ -60,6 +63,22 @@ const HomeSection = styled.div`
     100%{
         transform:rotate(0deg) translateX(300px);
     }
+  }
+
+  .home_container{
+    /* position:relative; */
+  }
+  .imagen_1{
+    background-image:url('./movibles/gohan.jpg');
+    position: absolute;
+    background-size:cover;
+    height:180px;
+    width:120px;
+    right:0;
+    animation: flotar 5s infinite;
+  }
+  .greeting{
+    margin-right:100px;
   }
 
   z-index:1;

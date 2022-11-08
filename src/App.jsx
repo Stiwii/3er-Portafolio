@@ -52,12 +52,17 @@ function App() {
                 <Home />
               </section>
               <section id='about'>
+                <div className='imagen_2'>
+                </div>
                 <About />
               </section>
               <section id='skills'>
+                <div className='imagen_3'>
+                </div>
                 <Skills />
               </section>
               <section id='projects'>
+                <div className='imagen_4'></div>
                 <Projects />
               </section>
               <section id='contact'>

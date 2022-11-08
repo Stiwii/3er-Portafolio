@@ -7,8 +7,9 @@ const About = () => {
   return (
     <>
     <AboutSection>
-      <div className="about__container vista">
 
+      <div className="about__container vista">
+      
       <div className='title'>
         <h2><span>About me</span></h2>
       </div>
@@ -41,6 +42,7 @@ export default About
 
 const AboutSection = styled.div`
  margin-top: 100px;
+ position: relative;
  cursor: url('./icon/normal.png'), auto; 
  div,h1,h2,h3,h4,p,ul,li{
     cursor: url('./icon/normal.png'), auto; 
@@ -48,4 +50,6 @@ const AboutSection = styled.div`
   a{
   cursor: url('./icon/pointer.png'), auto; 
  }
+
+
 `

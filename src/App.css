@@ -107,7 +107,55 @@ a{
     }
   }
 
+  @keyframes flotar {
+    0%{
+        transform: rotate(0deg) translateY(0px);
+    }
+    50%{
+        transform:rotate(0deg) translateY(30px);
+    }
+    100%{
+        transform:rotate(0deg) translateY(0px);
+    }
+  }
+  @keyframes flotar_2 {
+    0%{
+        transform: rotate(0deg) translateY(0px);
+    }
+    40%{
+        transform:rotate(40deg) translateY(40px);
+    }
+    80%{
+      transform:rotate(-40deg) translateY(40px);
+  }
+    100%{
+        transform:rotate(0deg) translateY(0px);
+    }
+  }
 
+  @keyframes animacion_4 {
+    0%{
+        transform:  translateX(0px) rotate(10deg);
+    }
+    50%{
+        transform: translateY(10px) rotate(-10deg);
+    }
+    100%{
+        transform: translateX(0px) rotate(10deg);
+    }
+  }
+
+  @keyframes animacion_3 {
+    0%{
+        transform:  translateX(0px) rotate(10deg);
+    }
+    50%{
+        transform: translateX(300px) rotate(-10deg);
+    }
+    100%{
+        transform: translateX(0px) rotate(10deg);
+    }
+  }
 
 
 .app{
@@ -240,13 +288,52 @@ div{
 
 #home, #skills, #projects{
   display: flex;
+  position: relative;
   /* background: linear-gradient(10deg,var(--color-2t) 0% ,var(--color-4)50%, var(--color-5) 50% , var(--color-1t) 100% ); */
   z-index: 2;
 }
 #about,#experience, #contact{
   display: flex;
+  position: relative;
   /* background: linear-gradient(170deg,var(--color-2t) 0% ,var(--color-4)50%, var(--color-5) 50% , var(--color-1t) 100% ); */
   z-index: 2;
 }
 
+.imagen_2{
+  background-image:url('./movibles/goku.png');
+  position: absolute;
+  background-size:cover;
+  height:180px;
+  width:120px;
+  z-index: 1;
+  top:-20px;
+  left:30vw;
+  animation: flotar_2 5s infinite;
+}
+
+.imagen_3{
+  background-image:url('./movibles/pan.png');
+  position: absolute;
+  background-size:cover;
+  height:120px;
+  width:120px;
+  z-index: 1;
+  top:-20px;
+  left:0;
+  animation-delay: 5s ;
+  animation: animacion_3 10s infinite;
+}
+
+.imagen_4{
+  background-image:url('./movibles/black.png');
+  position: absolute;
+  background-size:cover;
+  height:140px;
+  width:140px;
+  z-index: 1;
+  top:-20px;
+  left:50vw;
+  animation-delay: 5s ;
+  animation: animacion_4 1s infinite;
+}
 

@@ -103,6 +103,7 @@ div,h1,h2,h3,h4,p,ul,li,article{
   }
 .contact__container{
   display: flex;
+  flex-direction: column;
   justify-content:center;
   align-items:center;
   cursor: url('./icon/normal.png'), auto;
